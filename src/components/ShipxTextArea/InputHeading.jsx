@@ -1,5 +1,7 @@
 import React from 'react'
 import { Button } from '../ui/button'
+import { cn } from '@/lib/utils'
+import { themeGuide } from '@/data/themeGuide'
 
 export default function InputHeading({ title, isRequired, actionButton, description }) {
   return (
@@ -7,12 +9,12 @@ export default function InputHeading({ title, isRequired, actionButton, descript
       <div>
         {/* Title */}
         <div className="flex gap-1">
-          <div className="text-foreground text-base leading-tight font-semibold">{title}</div>
+          <div className={cn(themeGuide.inputHeading)}>{title}</div>
           {isRequired && <div className="text-red-600">*</div>}
         </div>
 
         {/* Description */}
-        <div className="text-muted-foreground text-sm leading-tight">{description}</div>
+        <div className={cn(themeGuide.inputDescription)}>{description}</div>
       </div>
 
       {actionButton && <Button>Upload File</Button>}

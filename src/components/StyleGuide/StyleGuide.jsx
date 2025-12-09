@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { cn } from '@/lib/utils'
-import { themeStyles } from '@/data/themeGuide'
+import { themeGuide } from '@/data/themeGuide'
 
 const styleSystem = [
   {
@@ -9,74 +9,69 @@ const styleSystem = [
     items: [
       {
         name: 'Page Title (H1)',
-        classes: themeStyles.pageTitle,
+        classes: themeGuide.pageTitle,
         sampleText: 'Everything You Need To Grow Internationally',
         name2: 'Accent Text',
-        classes2: themeStyles.pageTitleAccent,
+        classes2: themeGuide.pageTitleAccent,
         sampleText2: 'Internationally',
       },
       {
         name: 'Section Heading (H2)',
-        classes: themeStyles.sectionHeading,
+        classes: themeGuide.sectionHeading,
         sampleText: 'Your ',
         name2: 'Accent Text',
-        classes2: themeStyles.sectionHeadingAccent,
+        classes2: themeGuide.sectionHeadingAccent,
         sampleText2: 'HS Code Tracker',
       },
       {
         name: 'Section Description',
-        classes: themeStyles.sectionDescription,
+        classes: themeGuide.sectionDescription,
         sampleText:
           'Input your product details, and let our system instantly handle the complexity...',
       },
       {
         name: 'Body Text',
-        classes: themeStyles.bodyText,
+        classes: themeGuide.bodyText,
         sampleText: 'Ship Products To Global Markets Quickly And Securely...',
       },
       {
-        name: 'Subtitle (H3)',
-        classes: themeStyles.subtitle,
-        sampleText: 'Account Details',
-      },
-      {
         name: 'Input Heading',
-        classes: themeStyles.inputHeading,
+        classes: themeGuide.inputHeading,
         sampleText: 'Product Description',
       },
       {
         name: 'Input Description',
-        classes: themeStyles.inputDescription,
+        classes: themeGuide.inputDescription,
         sampleText: 'Provide a detailed description of your product',
       },
       {
         name: 'Input Placeholder',
-        classes: themeStyles.inputPlaceholder,
+        classes: themeGuide.inputPlaceholder,
         sampleText: "e.g. 'Men's leather dress shoes with rubber soles",
       },
       {
         name: 'CTA Heading',
-        classes: themeStyles.ctaHeading,
+        classes: themeGuide.ctaHeading,
         sampleText: 'Experience the Future of Shipping',
       },
       {
         name: 'CTA Description',
-        classes: themeStyles.ctaDescription,
+        classes: themeGuide.ctaDescription,
         sampleText: 'Experience the Future of Shipping',
       },
       {
         name: 'Footer Body Text',
-        classes: themeStyles.footerBody,
+        classes: themeGuide.footerBody,
         sampleText: 'Empowering businesses to ship globally with confidence...',
       },
       {
         name: 'Footer Item Heading',
-        classes: themeStyles.footerHeading,
+        classes: themeGuide.footerHeading,
         sampleText: 'Quick Links',
       },
       {
         name: 'Footer Item',
-        classes: themeStyles.footerItem,
+        classes: themeGuide.footerItem,
         sampleText: 'Quick Links',
       },
     ],
@@ -86,19 +81,19 @@ const styleSystem = [
     items: [
       {
         name: 'Primary Button',
-        classes: themeStyles.buttonPrimary,
+        classes: themeGuide.buttonPrimary,
         sampleText: 'Generate another HS Code',
         elementType: 'button',
       },
       {
         name: 'Normal Button',
-        classes: themeStyles.buttonNormal,
+        classes: themeGuide.buttonNormal,
         sampleText: 'Upload Files',
         elementType: 'button',
       },
       {
         name: 'Badge / Tag',
-        classes: themeStyles.badge,
+        classes: themeGuide.badge,
         sampleText: 'New Arrival',
         elementType: 'div',
       },

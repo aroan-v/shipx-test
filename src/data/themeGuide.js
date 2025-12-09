@@ -1,12 +1,10 @@
-export const themeStyles = {
+export const themeGuide = {
   // Typography - Headings
   pageTitle: 'text-4xl font-extrabold tracking-tight',
   pageTitleAccent: 'text-secondary',
 
   sectionHeading: 'text-3xl font-semibold tracking-tight text-foreground',
   sectionHeadingAccent: 'text-secondary',
-
-  subtitle: 'scroll-m-20 text-2xl font-semibold tracking-tight',
 
   // Typography - Body
   sectionDescription: 'text-foreground text-base',

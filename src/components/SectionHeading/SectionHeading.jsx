@@ -2,6 +2,8 @@ import React from 'react'
 import Badge from '../Badge'
 import SectionTitle from './SectionTitle'
 import InputHeading from '../ShipxTextArea/InputHeading'
+import { themeGuide } from '@/data/themeGuide'
+import { cn } from '@/lib/utils'
 
 const hsCodeDescription =
   'Input your product details, and let our system instantly handle the complexity of HTSUS (US) and HS (ROW) code selection, giving you the certainty required to ship anywhere.'
@@ -13,12 +15,12 @@ function SectionHeading({ content, description = hsCodeDescription }) {
       <div className="flex w-full flex-1 flex-col items-end gap-1">
         <Badge />
         <SectionTitle className={'text-right'}>
-          Your <span className="text-secondary">HS Code AI Finder</span>
+          Your <span className={themeGuide.sectionHeadingAccent}>HS Code AI Finder</span>
         </SectionTitle>
       </div>
 
       {/* Right Container */}
-      <div className="text-foreground flex-1">{description}</div>
+      <div className={cn(themeGuide.sectionDescription, 'flex-1')}>{description}</div>
     </div>
   )
 }
